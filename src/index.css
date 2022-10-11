@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+.roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+.open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+@layer components {
+	.selected {
+		@apply font-bold relative;
+	}
+
+	.bg-web-gray {
+		@apply bg-[#343A40];
+	}
+
+	.text-web-gray {
+		@apply text-[#343A40];
+	}
+
+	.footer-column {
+		@apply flex flex-col w-full md:w-auto mb-4 md:mb-0 md:space-y-3;
+	}
+
+	.footer-title {
+		@apply font-bold mb-3 inline md:mb-7 text-lg;
+	}
+
+	.footer-link {
+		@apply font-thin  flex space-x-3 items-center;
+	}
+	.footer-svg {
+		@apply w-4 h-4;
+	}
+	.roadmap-number {
+		@apply absolute hidden md:block h-[30px] md:h-[60px];
+	}
+
+	.roadmap-line {
+		@apply bg-[#dd9933] w-3 md:w-2 flex flex-col;
+	}
+
+	.client-social {
+		@apply h-4 w-4  cursor-pointer;
+	}
+
+	/* Solutions */
+
+	.solution-card {
+		@apply flex px-5  lg:px-10 xl:px-0 w-full items-center justify-between  text-web-gray;
+	}
+
+	.solution-card-image {
+		@apply flex flex-col w-[40%] mr-5  lg:flex-row lg:space-x-10 space-y-10 lg:w-[50%];
+	}
+
+	.right {
+		@apply justify-end ml-5 mr-0 lg:ml-0;
+	}
+
+	.solution-card-image img {
+		@apply lg:w-auto lg:h-[300px] w-[100px];
+	}
+
+	.solution-card-menu {
+		@apply flex flex-col lg:px-10   flex-grow lg:flex-grow-0 lg:w-[50%] mb-auto;
+	}
+
+	.solution-card-title {
+		@apply md:text-3xl text-center lg:text-left font-bold mb-10;
+	}
+
+	.solution-card-items {
+		@apply flex flex-col space-y-6 pl-5 text-xs lg:text-lg font-semibold;
+	}
+
+	.solution-card-item {
+		@apply relative pl-10;
+	}
+
+	.solution-card-button {
+		@apply shadow-xl rounded-md bg-[#dd9933] text-center py-3 cursor-pointer lg:w-[50%] w-[95%] box-border border-2 border-[#dd9933] hover:bg-white hover:text-[#dd9933] transition-all duration-200 ml-5 mt-10 font-bold text-white;
+	}
+
+	.contact-form input {
+		@apply focus:outline-none border w-full rounded-sm border-gray-300 text-xs md:text-base pl-1 md:pl-4 py-2 mt-2 mr-1 md:mr-2;
+	}
+
+	/* ABOUT */
+	.contact-info {
+		@apply flex  text-white;
+	}
+
+	.contact-info-text {
+		@apply ml-5;
+	}
+	.contact-info-title {
+		@apply font-bold text-xl md:text-2xl mb-3;
+	}
+	.contact-info-description {
+		@apply flex flex-col font-thin;
+	}
+
+	.contact-label {
+		@apply text-xs md:text-base;
+	}
+
+	.fade-text {
+		@apply transition-all transform;
+	}
+}
+
+.core-services {
+	position: relative;
+}
+
+.solution-card-item::before {
+	position: absolute;
+	left: 0;
+	content: ' ';
+	width: 14px;
+	top: calc(50% - 7px);
+	height: 14px;
+	border-radius: 50%;
+	background-color: #dd9933;
+}
+
+.bm-menu-wrap {
+	background-color: #dd9933;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bm-cross-button {
+	color: #2e2f30;
+	margin-top: 20px;
+}
+
+.bm-item-list {
+	padding-top: 80px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.bm-menu-wrap a {
+	margin-bottom: 20px;
+	color: #2e2f30;
+}
+
+.bm-menu-wrap .menu-selected {
+	color: #fff;
+}
+
+.selected::before {
+	content: '';
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #dd9933;
+}
+.yellow-line {
+	position: relative;
+}
+.yellow-line:after {
+	z-index: -1;
+	content: '';
+	display: block;
+	position: absolute;
+	width: 60vw;
+	margin-top: 10px;
+	bottom: 0;
+	height: 3px;
+	background-color: #dd9933;
+}
+
+.roadmap-item {
+	box-shadow: 0px 0px 10px 3px rgba(151, 148, 148, 0.75);
+}
+
+div {
+	animation: fadeIn 1s;
+	-webkit-animation: fadeIn 1s;
+	-moz-animation: fadeIn 1s;
+	-o-animation: fadeIn 1s;
+	-ms-animation: fadeIn 1s;
+}
+
+.slider-changes {
+	transition: all 1s;
+	opacity: 0;
+}
+.slider-changes2 {
+	transition: all 1s;
+	opacity: 1;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.core-service-card {
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.core-service-inner {
+	position: relative;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.core-service-card:hover .core-service-inner {
+	transform: rotateY(360deg);
+}
