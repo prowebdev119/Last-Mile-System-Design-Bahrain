@@ -108,6 +108,7 @@ const ContactUs = () => {
 								<div className="contact-info-description">
 									<span>Tel : +966 13 8999927</span>
 									<span>Fax : +966 13 8974479</span>
+									<span>Mobile : +966 505 842611</span>
 								</div>
 							</div>
 						</div>
