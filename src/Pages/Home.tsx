@@ -4,12 +4,12 @@ import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 import CoreService from '../Components/CoreService';
 import Footer from '../Components/Footer';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/autoplay';
 import 'swiper/css/free-mode';
-
+import SwiperCore, { Autoplay } from 'swiper';
 const CONTENT = [
 	{
 		title: 'Security Solutions',
@@ -29,12 +29,15 @@ const CONTENT = [
 ];
 
 const Home = () => {
+	SwiperCore.use([Autoplay]);
+
 	const maxNumber = CONTENT.length - 1;
 	const [currentText, setCurrentText] = useState(0);
 	const [currentStyle, setCurrentStyle] = useState('');
 
 	const increaseText = (num: any) => {
 		setCurrentStyle('slider-changes');
+
 		setTimeout(() => {
 			setCurrentStyle('slider-changes2');
 			if (currentText >= maxNumber) {
@@ -47,6 +50,7 @@ const Home = () => {
 
 	const decreaseText = (num: any) => {
 		setCurrentStyle('slider-changes');
+
 		setTimeout(() => {
 			setCurrentStyle('slider-changes2');
 			if (currentText == 0) {
@@ -61,11 +65,59 @@ const Home = () => {
 		<div>
 			<Header selected="home" isHome={true} />
 			{/* TOP SLIDER */}
-			<img
-				src="/gif/main-earth.gif"
-				className="absolute contain t-0 l-0 md:h-full w-full -z-2"
+			{/* <img
+				src={`/gif/video${currentText + 1}.gif`}
+				className={`absolute contain t-0 l-0 md:h-full w-full -z-2 ${currentStyle}`}
 				alt=""
-			/>
+			/> */}
+			{currentText === 0 && (
+				<video
+					playsInline
+					autoPlay
+					loop
+					muted
+					className={`absolute t-0 l-0  w-full  -z-2 ${currentStyle}`}
+				>
+					<source
+						src={`/mp4/video1.mp4`}
+						className=" left-0 absolute contain t-0 l-0 md:h-full w-full -z-2"
+						type="video/mp4"
+					/>
+				</video>
+			)}
+
+			{currentText === 1 && (
+				<video
+					playsInline
+					autoPlay
+					loop
+					muted
+					className={`absolute t-0 l-0  w-full -z-2 ${currentStyle}`}
+				>
+					<source
+						src={`/mp4/video2.mp4`}
+						className={`left-0 absolute contain t-0 l-0 md:h-full w-full -z-2 ${currentStyle}`}
+						type="video/mp4"
+					/>
+				</video>
+			)}
+
+			{currentText === 2 && (
+				<video
+					playsInline
+					autoPlay
+					loop
+					muted
+					className={`absolute t-0 l-0  w-full -z-2 ${currentStyle}`}
+				>
+					<source
+						src={`/mp4/video3.mp4`}
+						className=" left-0 absolute contain t-0 l-0 md:h-full w-full -z-2"
+						type="video/mp4"
+					/>
+				</video>
+			)}
+
 			<div className="md:h-[100vh] relative max-w-[100vw]">
 				{/* VIDEO */}
 				<div className="md:h-[100vh] w-full flex items-center">
@@ -97,7 +149,7 @@ const Home = () => {
 				</div>
 			</div>
 			{/* SERVICES */}
-			<div className="mt-[80px] sm:mt-[150px] md:mt-20 flex flex-col space-y-10  items-center b w-full core-services lg:mb-20">
+			<div className="mt-[80px] sm:mt-[200px]  flex flex-col space-y-10  items-center b w-full core-services lg:mb-20">
 				<div className="text-3xl md:text-5xl text-web-gray font-bold mb-5 md:mb-20 ">
 					Our Core Services
 				</div>
@@ -146,10 +198,13 @@ const Home = () => {
 				{/* SLIDER */}
 				<div className="mx-10">
 					<Swiper
+						autoplay={{
+							delay: 500,
+						}}
 						freeMode={true}
 						grabCursor={true}
 						modules={[FreeMode]}
-						className=" flex items-center justify-center"
+						className=" flex items-center h-full justify-center"
 						slidesPerView={4}
 						spaceBetween={5}
 						breakpoints={{
@@ -171,32 +226,43 @@ const Home = () => {
 							},
 						}}
 					>
-						<SwiperSlide className="flex items-center justify-center">
-							<img src={`/png/example-partner.png`} alt="" />
+						<SwiperSlide className="flex items-center m-auto  min-h-full justify-center">
+							<a href="https://www.huawei.com/en/?ic_medium=direct&ic_source=surlent">
+								<img src={`/png/partner3.png`} alt="" />
+							</a>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={`/png/example-partner.png`} alt="" />
+							<a href="https://www.commscope.com/">
+								<img src={`/svg/partner1.svg`} alt="" />
+							</a>
+						</SwiperSlide>
+						<SwiperSlide className="">
+							<a href="https://www.hpe.com/us/en/home.html">
+								<img src={`/svg/partner2.svg`} className="" alt="" />
+							</a>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={`/png/example-partner.png`} alt="" />
+							<a href="https://www.prometheanworld.com/au/">
+								<img src={`/svg/partner4.svg`} alt="" />
+							</a>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={`/png/example-partner.png`} alt="" />
+							<a
+								href="https://www.juniper.net/us/en.html
+							"
+							>
+								<img src={`/svg/partner5.svg`} alt="" />
+							</a>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={`/png/example-partner.png`} alt="" />
+							<a href="https://www.cisco.com/">
+								<img src={`/svg/partner6.svg`} className="pl-3 md:pl-5" alt="" />
+							</a>
 						</SwiperSlide>
 						<SwiperSlide>
-							<img src={`/png/example-partner.png`} alt="" />
-						</SwiperSlide>
-						<SwiperSlide>
-							<img src={`/png/example-partner.png`} alt="" />
-						</SwiperSlide>
-						<SwiperSlide>
-							<img src={`/png/example-partner.png`} alt="" />
-						</SwiperSlide>
-						<SwiperSlide>
-							<img src={`/png/example-partner.png`} alt="" />
+							<a href="https://www.commscope.com/">
+								<img src={`/svg/partner7.svg`} alt="" />
+							</a>
 						</SwiperSlide>
 					</Swiper>
 				</div>

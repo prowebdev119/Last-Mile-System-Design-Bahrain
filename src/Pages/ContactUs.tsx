@@ -1,7 +1,22 @@
 import React from 'react';
 import Layout from '../Components/Layout';
+import { toast } from 'react-toastify';
 
 const ContactUs = () => {
+	const handleSubmit = (e: any) => {
+		e.preventDefault();
+		toast.success('Thank you, we will contact you soon!', {
+			position: 'top-right',
+			autoClose: 5000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: false,
+			progress: undefined,
+			theme: 'light',
+		});
+	};
+
 	return (
 		<Layout title="Contact Us" description="" selected="contact">
 			{/* MAIN */}
@@ -19,7 +34,13 @@ const ContactUs = () => {
 				<div className="md:absolute   md:bg-inherit md:pt-0 pt-20 flex flex-col lg:flex-row w-full  left-0 justify-center  h-full items-center">
 					{/* FORM */}
 					<div className=" md:rounded-xl   px-7 shadow-lg shadow-gray-600 bg-white mx-5 mb-5 md:mx-0 md:mr-20">
-						<form action="" className="flex flex-col mx-5 space-y-3 text-web-gray ">
+						<form
+							onSubmit={(e: any) => {
+								e.preventDefault();
+								handleSubmit(e);
+							}}
+							className="flex flex-col mx-5 space-y-3 text-web-gray "
+						>
 							<div className=" md:text-3xl font-bold mb-3 mt-8 md:my-5">
 								Contact Us & Let’s Collaborate!
 							</div>
@@ -31,6 +52,7 @@ const ContactUs = () => {
 											First Name *
 										</label>
 										<input
+											required
 											type="text"
 											placeholder="Your first name"
 											id="first-name"
@@ -41,7 +63,12 @@ const ContactUs = () => {
 										<label className="contact-label" htmlFor="last-name">
 											Last name *
 										</label>
-										<input type="text" placeholder="Your last name" id="last-name" />
+										<input
+											required
+											type="text"
+											placeholder="Your last name"
+											id="last-name"
+										/>
 									</div>
 								</div>
 
@@ -49,14 +76,14 @@ const ContactUs = () => {
 									<label className="contact-label" htmlFor="first-name">
 										Email *
 									</label>
-									<input type="email" placeholder="Your email" id="first-name" />
+									<input required type="email" placeholder="Your email" id="first-name" />
 								</div>
 
 								<div>
 									<label className="contact-label" htmlFor="subject">
 										Subject *
 									</label>
-									<input type="text" placeholder="Enter subject" id="subject" />
+									<input required type="text" placeholder="Enter subject" id="subject" />
 								</div>
 
 								<div className="flex flex-col space-y-2 w-full">
@@ -64,6 +91,7 @@ const ContactUs = () => {
 										Message *
 									</label>
 									<textarea
+										required
 										className="focus:outline-none py-2 px-3 border border-gray-300 rounded-sm resize-none"
 										name=""
 										id="message"
@@ -87,8 +115,8 @@ const ContactUs = () => {
 							<div className="contact-info-text">
 								<div className="contact-info-title">Address</div>
 								<div className="contact-info-description">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-									tempor{' '}
+									76H9+QF2, Prince Turkey Street, Alkurnaish, Al Khobar 34414, Saudi
+									Arabia
 								</div>
 							</div>
 						</div>

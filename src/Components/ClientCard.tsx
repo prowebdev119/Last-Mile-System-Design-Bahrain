@@ -6,11 +6,11 @@ const ClientCard: React.FC<{
 	imageUrl: string;
 }> = ({ companyName, description, imageUrl }) => {
 	return (
-		<div className="relative w-[80%] xl:w-[45%] xl:mr-10 mb-10">
+		<div className="relative w-[80%] xl:w-[23%] h-[150px] xl:mr-10 mb-10 xl:!mr-auto">
 			{/* TEXTS */}
-			<img src={`/png/${imageUrl}.png`} className="w-full h-full rounded-3xl" alt="" />
+			<img src={`${imageUrl}`} className="w-full h-full rounded-3xl" alt="" />
 
-			<div className="absolute z-10 bottom-4 text-white hover:text-[#DD9933] transition-all duration-200  ml-5">
+			<div className="hidden">{`<div className="absolute z-10 bottom-4 text-gray-500 hover:text-[#DD9933] transition-all duration-200  ml-5">
 				<div className=" text-xl md:text-3xl font-bold">{companyName}</div>
 				<div className="text-thin md:text-md font-thin mt-1">{description}</div>
 				{/* SOCIALS */}
@@ -28,7 +28,7 @@ const ClientCard: React.FC<{
 						<img src="/svg/linkedin.svg" className="client-social" alt="" />
 					</a>
 				</div>
-			</div>
+			</div>`}</div>
 		</div>
 	);
 };

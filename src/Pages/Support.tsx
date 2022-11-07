@@ -14,14 +14,28 @@ const Support = () => {
 				{/* LEFT */}
 				<div className="flex flex-col md:items-start items-center w-[80%] md:w-[50%]">
 					<div className="font-thin leading-7 fancy-text">
-					LMT is keen to apply the highest quality standards in the provision of after-sales services, whether through partners or the provision of annual maintenance contracts with periodic visits to ensure the continuity of the efficiency of the devices with the submission of periodic reports to ensure customer satisfaction with the services and ensure the continuity of service without interruption.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst
+						quisque. Ullamcorper morbi tincidunt ornare massa eget egestas purus.
+						Vulputate mi sit amet mauris commodo quis imperdiet. Nec feugiat in fermentum
+						posuere urna. Adipiscing commodo elit at imperdiet dui accumsan. Commodo
+						ullamcorper a lacus vestibulum sed arcu non odio. Fermentum iaculis eu non
+						diam phasellus vestibulum. Pretium aenean pharetra magna ac. Pellentesque
+						habitant morbi tristique senectus et. Amet consectetur adipiscing elit
+						pellentesque habitant morbi tristique senectus et. Urna cursus eget nunc
+						scelerisque viverra mauris in aliquam sem. Habitasse platea dictumst
+						vestibulum rhoncus est pellentesque. Nibh ipsum consequat nisl vel. Tortor at
+						risus viverra adipiscing at in tellus integer feugiat. Quam lacus suspendisse
+						faucibus interdum posuere lorem. Vulputate eu scelerisque felis imperdiet.
+						Auctor neque vitae tempus quam pellentesque nec nam. Porttitor eget dolor
+						morbi non arcu risus quis varius.
 					</div>
 				</div>
 
 				{/* RIGHT */}
 				<div className="hidden md:block -ml-5">
 					<img
-						src="/png/services.png"
+						src="/jpg/services.jpg"
 						className="-mt-[150px] hover:scale-110 transition-all duration-300"
 						alt=""
 					/>
@@ -55,8 +69,8 @@ const Support = () => {
 					{/* LEFT */}
 					<div className="flex flex-col fle space-y-10 md:!mr-10">
 						<img
-							src="/png/roadmap1.png"
-							className=" hover:scale-110 transition-all duration-300 block row-span-3 w-[90%]"
+							src="/jpg/roadmap1.jpg"
+							className="md:w-[80%] hover:scale-110 transition-all duration-300 block row-span-3 w-[90%]"
 							alt=""
 						/>
 						<RoadmapItem
@@ -76,7 +90,7 @@ const Support = () => {
 						/>
 					</div>
 					{/* MIDDLE */}
-					<div className="roadmap-line !-ml-0 !-mr-[1px]   min-h-full grid grid-cols-1 grid-rows-6 text-web-gray">
+					<div className="roadmap-line md:ml-5 !-ml-0 !-mr-[1px]   min-h-full grid grid-cols-1 grid-rows-6 text-web-gray">
 						{/* NUMBERS */}
 						<img
 							src="/svg/number1.svg"
@@ -127,7 +141,7 @@ const Support = () => {
 							description="Ensure that the customer is given options to choose the product from within our partners while making sure that the products are supplied through the authorized channels while adhering to the duration of the supply."
 						/>
 						<img
-							src="/png/roadmap2.png"
+							src="/jpg/roadmap2.jpg"
 							className="row-span-3 ml-auto md:w-[80%] hover:scale-110 transition-all duration-300"
 							alt=""
 						/>

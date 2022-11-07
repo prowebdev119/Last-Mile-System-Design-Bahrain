@@ -105,7 +105,7 @@
 		@apply font-bold text-xl md:text-2xl mb-3;
 	}
 	.contact-info-description {
-		@apply flex flex-col font-thin;
+		@apply flex flex-col space-y-2 font-thin;
 	}
 
 	.contact-label {
@@ -115,6 +115,13 @@
 	.fade-text {
 		@apply transition-all transform;
 	}
+}
+
+.swiper-slide {
+	margin: auto;
+}
+.swiper-slide img {
+	width: 200px;
 }
 
 .core-services {

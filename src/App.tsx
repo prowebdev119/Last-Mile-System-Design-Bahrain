@@ -11,10 +11,13 @@ import Network from './Pages/Solutions/Network';
 import Radio from './Pages/Solutions/Radio';
 import Security from './Pages/Solutions/Security';
 import Support from './Pages/Support';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 	return (
 		<BrowserRouter>
+			<ToastContainer />
 			<Routes>
 				<Route index element={<Home />} />
 				<Route path="about-us" element={<AboutUs />} />

@@ -16,32 +16,42 @@ const OurClients = () => {
 					<ClientCard
 						companyName="Company Name"
 						description="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-						imageUrl="example-client"
+						imageUrl="/png/client1.png"
 					/>
 					<ClientCard
 						companyName="Company Name"
 						description="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-						imageUrl="example-client"
+						imageUrl="/png/client2.png"
 					/>
 					<ClientCard
 						companyName="Company Name"
 						description="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-						imageUrl="example-client"
+						imageUrl="/png/client3.png"
 					/>
 					<ClientCard
 						companyName="Company Name"
 						description="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-						imageUrl="example-client"
+						imageUrl="/png/client9.png"
 					/>
 					<ClientCard
 						companyName="Company Name"
 						description="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-						imageUrl="example-client"
+						imageUrl="/png/client5.png"
 					/>
 					<ClientCard
 						companyName="Company Name"
 						description="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-						imageUrl="example-client"
+						imageUrl="/png/client6.png"
+					/>
+					<ClientCard
+						companyName="Company Name"
+						description="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+						imageUrl="/png/client7.png"
+					/>
+					<ClientCard
+						companyName="Company Name"
+						description="“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+						imageUrl="/png/client8.png"
 					/>
 				</div>
 
