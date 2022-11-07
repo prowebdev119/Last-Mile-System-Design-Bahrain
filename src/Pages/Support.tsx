@@ -14,21 +14,7 @@ const Support = () => {
 				{/* LEFT */}
 				<div className="flex flex-col md:items-start items-center w-[80%] md:w-[50%]">
 					<div className="font-thin leading-7 fancy-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. In hac habitasse platea dictumst
-						quisque. Ullamcorper morbi tincidunt ornare massa eget egestas purus.
-						Vulputate mi sit amet mauris commodo quis imperdiet. Nec feugiat in fermentum
-						posuere urna. Adipiscing commodo elit at imperdiet dui accumsan. Commodo
-						ullamcorper a lacus vestibulum sed arcu non odio. Fermentum iaculis eu non
-						diam phasellus vestibulum. Pretium aenean pharetra magna ac. Pellentesque
-						habitant morbi tristique senectus et. Amet consectetur adipiscing elit
-						pellentesque habitant morbi tristique senectus et. Urna cursus eget nunc
-						scelerisque viverra mauris in aliquam sem. Habitasse platea dictumst
-						vestibulum rhoncus est pellentesque. Nibh ipsum consequat nisl vel. Tortor at
-						risus viverra adipiscing at in tellus integer feugiat. Quam lacus suspendisse
-						faucibus interdum posuere lorem. Vulputate eu scelerisque felis imperdiet.
-						Auctor neque vitae tempus quam pellentesque nec nam. Porttitor eget dolor
-						morbi non arcu risus quis varius.
+					LMT is keen to apply the highest quality standards in the provision of after-sales services, whether through partners or the provision of annual maintenance contracts with periodic visits to ensure the continuity of the efficiency of the devices with the submission of periodic reports to ensure customer satisfaction with the services and ensure the continuity of service without interruption.
 					</div>
 				</div>
 
