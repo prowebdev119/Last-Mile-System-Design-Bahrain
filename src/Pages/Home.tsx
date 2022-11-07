@@ -17,12 +17,12 @@ const CONTENT = [
 		button: 'DISCOVER MORE',
 	},
 	{
-		title: 'Security Solutions 2',
+		title: 'Internet Connectivity',
 		description: 'Cybersecurity services for enterprise 2',
 		button: 'DISCOVER MORE',
 	},
 	{
-		title: 'Security Solutions 3',
+		title: 'Switching & Data Centers',
 		description: 'Cybersecurity services for enterprise 3',
 		button: 'DISCOVER MORE',
 	},
