@@ -41,7 +41,7 @@ const AboutUs = () => {
 				{/* BOTTOM PART */}
 				<div className="flex flex-col  pt-10">
 					{/* TOP */}
-					{/* <div className="flex lg:flex-row flex-col-reverse items-center space-x-10">
+					<div className="flex lg:flex-row flex-col-reverse items-center space-x-10">
 						<img
 							src="/svg/our-mission.svg"
 							className="w-full lg:w-[40%]  -ml-10 mb-10 lg:mb-0 "
@@ -58,7 +58,7 @@ const AboutUs = () => {
 								low current systems.
 							</div>
 						</div>
-					</div> */}
+					</div>
 
 					{/* BOTTOM */}
 					<div className="flex flex-col lg:flex-row items-center lg:space-x-10   w-full">
