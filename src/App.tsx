@@ -19,7 +19,20 @@ function App() {
 		<BrowserRouter>
 			<ToastContainer />
 			<Routes>
-				
+				<Route index element={<Home />} />
+				<Route path="about-us" element={<AboutUs />} />
+				<Route path="contact-us" element={<ContactUs />} />
+				<Route path="services" element={<Support />} />
+				<Route path="clients" element={<OurClients />} />
+				<Route path="contact-us" element={<ContactUs />} />
+				<Route path="solutions" element={<Solutions />} />
+
+				<Route path="radio-and-telecommunication" element={<Radio />} />
+				<Route path="switching-and-data-center" element={<DataCenter />} />
+				<Route path="network-infrastructure-cabling" element={<Network />} />
+				<Route path="centralized-and-ip-tv" element={<Centralized />} />
+				<Route path="security-and-surveillance" element={<Security />} />
+				<Route path="audio-visual-and-sound-systems" element={<Audio />} />
 			</Routes>
 		</BrowserRouter>
 	);
